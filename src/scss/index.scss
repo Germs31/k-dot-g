@@ -1,9 +1,12 @@
 @import 'config';
-
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 body {
   background: $main-dark-color;
   color: #fff;
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;

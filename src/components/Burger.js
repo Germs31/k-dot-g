@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 
-const Burger = () => {
+const Burger = ({open}) => {
     return (
-        <div className="burger">
+        <div onClick={() => open()} className="burger">
             <div/>
             <div/>
             <div/>
