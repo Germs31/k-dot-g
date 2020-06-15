@@ -6,15 +6,14 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Faq from './components/Faq';
 import Resume from './components/Resume';
+import Landing from './components/Landing'
 
 const App = () => {
-  const open = () => {
-    console.log('hello')
-  }
   return (
     <div className="App">
-      <Burger open={open} />
+      <Burger />
 
+      <Landing />
       <About />
       <Resume />
       <Faq />

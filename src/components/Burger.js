@@ -1,8 +1,9 @@
-import React from 'react';
+import React, {useState} from 'react';
 
-const Burger = ({open}) => {
+const Burger = () => {
+    const [open, setOpen] = useState(false);
     return (
-        <div onClick={() => open()} className="burger">
+        <div open={open} onClick={() => setOpen(!open)} className="burger">
             <div/>
             <div/>
             <div/>
