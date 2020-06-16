@@ -45,7 +45,6 @@
 }
 
 nav{
-    // display: none;
     .menu{
         z-index: 50;
         position: fixed;
@@ -79,35 +78,43 @@ nav{
     }
 }
 
-
-.landing {
+.landing-container{
     background: url('../Images/landing.jpg') no-repeat center center fixed;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    &-text{
+    .landing {
+        height: 100vh;
         display: flex;
-        flex-direction: column;
         align-items: center;
-        width: 100%;
-        font-size: 2.5rem;
-    }
-
-    &-img{
-        width: 100%;
-        display: flex;
         justify-content: center;
-        font-size: 5rem;
-        color: $main-orange;
+        &-text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            font-size: 2.5rem;
+        }
+    
+        &-img{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            font-size: 5rem;
+            color: $main-orange;
+        }
+    
     }
-
     .down-arrow{
         display: flex;
+        position: absolute;
+        left: 1%;
+        bottom: 5%;
         width: 100%;
-        font-size: 1.5rem;
+        font-size: 3rem;
         color: $main-orange;
         cursor: pointer;
+
+        &:hover{
+            color: $main-red;
+        }
     }
 }
 
@@ -137,4 +144,22 @@ nav{
 
 .contact{
     height: 100vh;
+}
+
+
+footer {
+    height: 60px;
+    background: $main-yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .footer-icon{
+        cursor: pointer;
+        font-size: 4rem;
+        transition: 0.50s ease;
+        &:hover{
+            color: $main-blue;
+        }
+    }
 }

@@ -6,6 +6,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Faq from './components/Faq';
 import Landing from './components/Landing';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <About />
       <Faq />
       <Contact />
+      <Footer />
     </div>
   );
 }
