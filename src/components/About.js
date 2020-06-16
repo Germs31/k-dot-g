@@ -8,7 +8,7 @@ const About = () => {
                 <img src={Kev} alt="Kevin on hiking trip"/>
             </div>
             <div className="about-text">
-                <h4>Lorem Ipsum</h4>
+                <h4><span className="section-num">01.</span> About Me</h4>
                 <p>Hi there! My name is Kevin Garcia. I was born in Los Angeles and was
                 raised by a beautiful set of parents who
                 immigrated from El Salvador. I recently graduated from the Honors in Psychology Program at California State University
