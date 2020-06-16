@@ -1,5 +1,5 @@
 import React from 'react'
-import {BsChevronDoubleDown} from 'react-icons/bs';
+import {BsChevronDoubleDown, BsLightningFill} from 'react-icons/bs';
 
 const Landing = () => {
     return (
@@ -8,7 +8,9 @@ const Landing = () => {
                 <h1>Kevin Garcia</h1>  
                 <h4>Lorem Ipsum</h4> 
             </div>
-            <BsChevronDoubleDown className="down-arrow"/>
+            <div className="landing-img">
+            </div>
+            {/* <BsChevronDoubleDown className="down-arrow"/> */}
         </div>
     )
 }
