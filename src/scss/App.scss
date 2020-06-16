@@ -160,6 +160,29 @@ nav{
     }
 }
 
+.resume-contianer{
+    height: 10vh;
+    background: $main-yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .btn{
+        font-weight: bold;
+        font-size: 1rem;
+        background: transparent;
+        padding: 20px;
+        text-transform: uppercase;
+        border: 2px solid #f7f7f7;
+        transition: .3s;
+        outline: none;
+        &:hover{
+            font-size: 1.1rem;
+            cursor: pointer;
+        }
+    }
+}
+
+
 .contact{
     height: 100vh;
 }

@@ -7,6 +7,7 @@ import Contact from './components/Contact';
 import Faq from './components/Faq';
 import Landing from './components/Landing';
 import Footer from './components/Footer';
+import Resume from './components/Resume';
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
 
       <Landing />
       <About />
+      <Resume/>
       <Faq />
       <Contact />
       <Footer />
