@@ -16,15 +16,26 @@ const Faq = () => {
         }
     ])
 
+    const randomFact = () => {
+        alert('hi')
+    }
+
     return (
         <div className="faq-section">
+            <h4 className="faq-title">
+                <span className="faq-title-num">02.</span>
+                Fun Fact
+            </h4>
             <div className="fun-fact-container">
                 {
-                    funFact.map(f => f.question)
+                    <div className="fun-fact">
+                        <h3>{funFact[0].question}</h3>
+                        <p>{funFact[0].answer}</p>
+                    </div>
                 }
             </div>
             <div className="fun-btn-container">
-                <button className="fun-btn">
+                <button className="fun-btn" onClick={() => randomFact()}>
                     Fun Fact 
                 </button>
             </div>
