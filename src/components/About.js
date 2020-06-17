@@ -3,7 +3,7 @@ import Kev from '../Images/img3.jpg';
 
 const About = () => {
     return (
-        <div className="about">
+        <div className="about" id="about">
             <div className="img-container">
                 <img src={Kev} alt="Kevin on hiking trip"/>
             </div>

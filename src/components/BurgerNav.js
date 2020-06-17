@@ -1,8 +1,14 @@
 import React, {useState} from 'react';
+import {Link} from 'react-scroll';
+import { close } from 'fs';
 
 const BurgerNav = () => {
     const [open, setOpen] = useState(false);
     console.log(open)
+
+    const closeNav = () => {
+        setOpen(false)
+    }
     return (
         <div>
             <div onClick={() => setOpen(!open)} className={open ? "burger open" : "burger"}>
@@ -12,9 +18,24 @@ const BurgerNav = () => {
             </div>
             <nav>
                 <ul className={open ? "menu open" : "menu"}>
-                    <li> <span className="link-num">01.</span> About</li>
-                    <li><span className="link-num">02.</span> Fun Fact</li>
-                    <li><span className="link-num">03.</span> Contact</li>
+                    <li>
+                        <Link onClick={() => closeNav()} to="about" smooth={true} duration={1000}>
+                            <span className="link-num">01.</span> 
+                            About
+                        </Link>
+                    </li>
+                    <li>
+                        <Link onClick={() => closeNav()} to="fun-fact" smooth={true} duration={1000}>
+                            <span className="link-num">02.</span> 
+                            Fun Fact
+                        </Link>
+                    </li>
+                    <li>
+                        <Link onClick={() => closeNav()} to="contact" smooth={true} duration={1000}>
+                            <span className="link-num">03.</span> 
+                            Contact
+                        </Link>
+                    </li>
                 </ul>
             </nav>
 

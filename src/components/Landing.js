@@ -1,5 +1,6 @@
 import React from 'react'
 import {BsChevronDoubleDown} from 'react-icons/bs';
+import {Link} from 'react-scroll';
 
 const Landing = () => {
     const changeSec = () => {
@@ -18,7 +19,9 @@ const Landing = () => {
                 <div className="landing-img">
                 </div>
             </div>
-            <BsChevronDoubleDown onClick={() => changeSec()} className="down-arrow"/>
+            <Link to="about" smooth={true} duration={1000}>
+                <BsChevronDoubleDown className="down-arrow"/>
+            </Link>
         </div>
     )
 }
