@@ -25,7 +25,7 @@ const BurgerNav = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link onClick={() => closeNav()} to="fun-fact" smooth={true} duration={1000}>
+                        <Link onClick={() => closeNav()} to="faq-section" smooth={true} duration={1000}>
                             <span className="link-num">02.</span> 
                             Fun Fact
                         </Link>

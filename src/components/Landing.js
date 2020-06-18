@@ -3,9 +3,6 @@ import {BsChevronDoubleDown} from 'react-icons/bs';
 import {Link} from 'react-scroll';
 
 const Landing = () => {
-    const changeSec = () => {
-        console.log('hey')
-    }
     return (
         <div className="landing-container">
             <div className="landing">
@@ -14,7 +11,14 @@ const Landing = () => {
                         <span className="first-letter">K</span>evin
                         <span className="first-letter">G</span>arcia
                     </h1>
-                    <h4>Lorem Ipsum</h4> 
+                    <div className="landing-btn-container">
+                        <button className="linked-btn">
+                            <a href="https://www.linkedin.com/in/kdotg/" target="_blank">Linkedin</a>
+                        </button> 
+                        <button className="linked-btn">
+                            <a href="https://drive.google.com/file/d/1hF6cbRrarDyQOFiAAkIixWvTr9KlA-Be/view?usp=sharing" target="_blank">Download Resume</a>
+                        </button> 
+                    </div>
                 </div>
                 <div className="landing-img">
                 </div>

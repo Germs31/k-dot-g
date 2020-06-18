@@ -95,6 +95,27 @@ nav{
                 background: $main-red;
             }
 
+            .linked-btn{
+                padding: 5px 20px;
+                font-size: 1.2rem;
+                background: transparent;
+                transition: .3s;
+                margin: 10px;
+                border: 1px solid #f7f7f7;
+                outline: none;
+                a{
+                    text-decoration: none;
+                    color: #f7f7f7;
+                    &:hover{
+                        color: $main-red;
+                    }
+                }
+
+                &:hover{
+                    font-size: 1.3rem;
+                }
+            }
+
         }
     
         &-img{
@@ -214,8 +235,6 @@ nav{
         }
     }
     .fun-fact-container{
-        color: #000;
-        background: $main-grey;
         height: 400px;
         width: 75%;
         display: flex;
@@ -230,6 +249,22 @@ nav{
 
             p{
                 font-size: 1.2rem;
+                font-weight: 100;
+                letter-spacing:  .1rem;
+                line-height: 3rem;
+
+                .quote-1{
+                    font-size: 2rem;
+                    margin: 15px;
+                    font-weight: bold;
+                }
+                .quote-2{
+                    display: inline-block;
+                    font-size: 2rem;
+                    margin: 5px;
+                    font-weight: bold;
+                    transform: rotate(180deg);
+                }
             }
         }
     }
