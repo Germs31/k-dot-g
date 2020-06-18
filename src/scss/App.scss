@@ -68,7 +68,7 @@ nav{
 
         .link-num{
             font-size: 4rem;
-            opacity: 0.2;
+            opacity: .7;
         }
         
         &.open{
@@ -180,7 +180,7 @@ nav{
 
         .section-num{
             font-size: 5rem;
-            opacity: .3;
+            opacity: .7;
             color: $main-blue;
         }
     }
@@ -225,13 +225,13 @@ nav{
     .faq-title{
         font-size: 1.5rem;
         font-weight: 500;
-        margin: 40px 700px 10px 0;
+        margin: 40px 725px 10px 0;
         letter-spacing: 4px;
         &-num{
             color: $main-blue;
             font-size: 3.7rem;
             font-weight: 700;
-            opacity: .3;
+            opacity: .7;
         }
     }
     .fun-fact-container{
@@ -254,11 +254,13 @@ nav{
                 line-height: 3rem;
 
                 .quote-1{
+                    color: $main-yellow;
                     font-size: 2rem;
                     margin: 15px;
                     font-weight: bold;
                 }
                 .quote-2{
+                    color: $main-yellow;
                     display: inline-block;
                     font-size: 2rem;
                     margin: 5px;
@@ -293,33 +295,36 @@ nav{
 
 
 .contact{
-    height: 100vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     .contact-title{
-        margin: 40px 700px 10px 0;
+        margin: 40px 600px 10px 0;
         font-weight: 500;
         letter-spacing: 4px;
         font-size: 1.5rem;
         .contact-num{
             font-size: 5rem;
-            opacity: .3;
+            opacity: .7;
             color: $main-blue;
         }
     }
     .form-container{
         width: 75%;
-        background: $main-red;
         form{
             display: flex;
             flex-direction: column;
             width: 100%;
             padding: 15px 43px;
             input, textarea{
-                height: 30px;
+                font-size: 30px;
+                background: transparent;
+                margin-bottom: 22px;
+                height: 50px;
                 border: none;
+                border-bottom: .5px solid #f7f7f7;
                 outline: none;
             }
     
@@ -353,12 +358,11 @@ nav{
 
 
 footer {
-    height: 60px;
-    background: $main-yellow;
+    height: 10vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: random($limit: 1);
+    // justify-content: center;
 
     .footer-icon{
         cursor: pointer;
