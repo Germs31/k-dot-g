@@ -61,9 +61,12 @@ nav{
 
         li {
             font-size: 2rem;
-            letter-spacing: .8rem;
+            letter-spacing: .5rem;
             list-style: none;
             padding: 3%;
+            &:hover{
+                cursor: pointer;
+            }
         }
 
         .link-num{
@@ -107,7 +110,7 @@ nav{
                     text-decoration: none;
                     color: #f7f7f7;
                     &:hover{
-                        color: $main-red;
+                        cursor: pointer;
                     }
                 }
 
@@ -317,9 +320,10 @@ nav{
             display: flex;
             flex-direction: column;
             width: 100%;
-            padding: 15px 43px;
+            padding: 15px 100px;
             input, textarea{
-                font-size: 30px;
+                color: #f7f7f7;
+                font-size: 1.5rem;
                 background: transparent;
                 margin-bottom: 22px;
                 height: 50px;
@@ -329,7 +333,8 @@ nav{
             }
     
             textarea{
-                height: 250px;
+                height: 180px;
+                resize: none;
             }
         }
 
@@ -358,15 +363,15 @@ nav{
 
 
 footer {
-    height: 10vh;
+    height: 20vh;
     display: flex;
     flex-direction: column;
-    align-items: random($limit: 1);
-    // justify-content: center;
+    align-items: center;
+    justify-content: center;
 
     .footer-icon{
         cursor: pointer;
-        font-size: 4rem;
+        font-size: 3rem;
         transition: 0.50s ease;
         &:hover{
             color: $main-blue;
