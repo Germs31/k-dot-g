@@ -4,7 +4,9 @@ import {FaLinkedin} from 'react-icons/fa'
 const Footer = () => {
     return (
         <footer>
-            <FaLinkedin className="footer-icon"/>
+            <a href="https://www.linkedin.com/in/kdotg/" target="_blank">
+                <FaLinkedin className="footer-icon"/>
+            </a>
             <p>© Kevin Garcia 2020</p>
         </footer>
     )

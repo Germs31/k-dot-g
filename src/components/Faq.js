@@ -47,7 +47,7 @@ const Faq = () => {
             </div>
             <div className="fun-btn-container">
                 <button className="fun-btn" onClick={() => factRandom()}>
-                    F.A.Q 
+                    More F.A.Q 
                 </button>
             </div>
         </div>

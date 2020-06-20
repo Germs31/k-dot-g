@@ -83,7 +83,7 @@ nav{
 }
 
 .landing-container{
-    background: url('../Images/landing.jpg') no-repeat center center fixed;
+    background: url('../Images/landing.jpg') no-repeat center center;
     .landing {
         height: 100vh;
         display: flex;
@@ -95,10 +95,6 @@ nav{
             align-items: center;
             width: 100%;
             font-size: 2.5rem;
-            h1{
-                background: $main-dark-color;
-                color: $main-blue;
-            }
 
             .linked-btn{
                 padding: 5px 20px;
@@ -370,13 +366,15 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    .footer-icon{
-        cursor: pointer;
-        font-size: 3rem;
-        transition: 0.50s ease;
-        &:hover{
-            color: $main-blue;
+    a{
+        color: #f7f7f7;
+        .footer-icon{
+            cursor: pointer;
+            font-size: 3rem;
+            transition: 0.50s ease;
+            &:hover{
+                color: $main-blue;
+            }
         }
     }
 }
