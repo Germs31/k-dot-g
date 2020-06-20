@@ -1,3 +1,87 @@
 @media(max-width: 700px){
+    nav{
+        .menu{
+            flex-direction: column;
+        }
+    }
+    // centered landing text
+    .landing-container{
+        .landing{
+            &-text{
+                font-size: 2rem;
+            }
+            &-img {
+                display:none;
+            }
+        }
+    }
 
+    .about{
+        flex-direction: column;
+        .img-container{
+            width: 100% ;
+            img{
+                margin-top: 25px;
+                width: 200px ;
+                height: 250px ;
+            }
+        }
+
+        &-text{
+            p{
+                line-height: 1rem ;
+            }
+            h4{
+                font-size: 1rem;
+                margin: 0 0 10px 0;
+            }
+        }
+        .section-num{
+            font-size: 2rem ;
+        }
+    }
+
+    .faq-section{
+        .faq-title{
+            margin: 0;
+            &-num{
+                font-size:2rem;
+            }
+        }
+
+        .fun-fact-container{
+            .fun-fact{
+                padding: 10px;
+                h3{
+                    font-size: 1rem;
+                }
+                p{
+                    font-size: 1rem;
+                    line-height: 1.2rem;
+
+                    .quote-1{
+                        font-size: 1rem;
+                    }
+                    .quote-2{
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .contact{
+        .contact-title{
+            margin: 0;
+            .contact-num{
+                font-size: 2rem;
+            }
+        }
+        .form-container{
+            width: 100%;
+            form{
+                padding: 15px 25px;
+            }
+        }
+    }
 }
