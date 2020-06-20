@@ -36,7 +36,7 @@ const Contact = () => {
         setServerState({ submitting: true });
         axios({
         method: "POST",
-        url: "https://formspree.io/Kdotgarciadot@gmail.com",
+        url: "https://formspree.io/kdotgarciadot@gmail.com",
         data: inputs
         })
         .then(r => {
